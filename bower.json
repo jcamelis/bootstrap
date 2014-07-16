@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "https://github.com/angular-ui/bootstrap/graphs/contributors"
+    },
+    "name": "angular-bootstrap",
+    "version": "0.11.1",
+    "main": ["./dist/ui-bootstrap-tpls-0.11.1.js"],
+    "dependencies": {
+        "angular": ">=1"
+    },
+    "ignore": [
+	    "karma.conf.js",
+	    "package.json",
+	    "Gruntfile.js",
+	    "docs",
+	    "misc",
+	    "node_modules",
+	    "src",
+	    "template"
+  	],
+}

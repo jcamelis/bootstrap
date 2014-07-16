@@ -157,12 +157,16 @@ angular.module( 'ui.bootstrap.tooltip', [ 'ui.bootstrap.position', 'ui.bootstrap
                 show()();
               }
             }
+            // Expose method to open on demand
+            scope.open = showTooltipBind;
 
             function hideTooltipBind () {
               scope.$apply(function () {
                 hide();
               });
             }
+            // Expose method to close on demand
+            scope.close = hideTooltipBind;
 
             // Show the tooltip popup element.
             function show() {
